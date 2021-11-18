@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			pre{
+				font-size: 20px;
+			}
+			.d1{
+				width: 1200px;
+				height: 800px;
+				border: solid 1px;
+				margin: auto;
+				/* 转换成弹性盒子模型 */
+				display: flex;
+				flex-flow: row nowrap;
+			}
+			.d1>div{
+				background: purple;
+				margin: 10px;
+				height: 200px;
+				width: 200px;
+				border: solid 1px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			flex-flow  其实就是flex-direction 以及 flex-warp,默认值为 row no-warp
+		</pre>
+		<div class="d1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>

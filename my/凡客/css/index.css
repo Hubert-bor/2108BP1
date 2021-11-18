@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.FlexBox{
+	display: flex;
+	justify-content: space-between;
+}
+.main{
+	width: 90%;
+	min-width: 1230px;
+	margin: auto;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+li{
+	list-style: none;
+}
+
+/* header start */
+.header .heaTop>img{
+	height: 50px;
+}
+.header .heaTop .heaList li a{
+	display: inline-block;
+	padding: 35px 38px;
+	color: #979591;
+}
+.header .heaBanner img{
+	width: 100%;
+}
+.header .heaBottomImg img{
+	width: 100%;
+	margin-top: 40px;
+}
+
+/* someImg start */
+.someImg .topImg img{
+	width: 100%;
+	margin-top: 40px;
+}
+.someImg  .imgTixu figure figcaption:nth-of-type(2){
+	font-size: 12px;
+	color: #d1cfce;
+}
+.someImg  .imgTixu figure figcaption:nth-of-type(3) .smallRed{
+	color: #c03a38;
+	margin-right: 100px;
+}
+.someImg  .imgTixu figure figcaption:nth-of-type(3) .red{
+	font-size: 34px;
+	color: #c03a38;
+}
+.someImg .imgThree{
+	/* height: 290px; */
+	margin-top: 50px;
+	padding: 35px 45px;
+	border: 1px solid #c8c8c8;
+}
+.someImg .imgThree .imgLeft figure{
+	width: 33%;
+	height: 130px;
+	text-align: center;
+}
+.someImg .imgThree .imgLeft figure img{
+	margin-top: 20px;
+}
+.someImg .imgThree .imgLeft figure figcaption a{
+	width: 160px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	margin-top: 27px;
+	display: inline-block;
+	background: #b81c22;
+}
+.someImg .imgThree .imgLeft figure:nth-of-type(2){
+	border-left: 1px solid #ececed;
+	border-right: 1px solid #ececed;
+	font-size: 12px;
+}
+.someImg .imgThree .imgLeft figure:nth-of-type(2) figcaption:nth-of-type(1){
+	margin-top: 20px;
+}
+.someImg .imgThree .imgLeft figure:nth-of-type(3) img{
+	width: 90px;
+	height: 90px;
+}
+.someImg .imgThree .imgLeft figure:nth-of-type(3){
+	font-size: 12px;
+}
+.someImg .imgThree .imgLeft figure:nth-of-type(3) .red{
+	color: #9b0006;
+}
+.someImg .imgThree .imgBottom{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #e5e5e5;
+	padding: 20px 0px;
+}
+.someImg .imgThree .imgBottom ul li a{
+	display: inline-block;
+	padding: 0px 76px;
+	font-size: 12px;
+	border-right: 1px solid #c8c8c8;
+}
+
+/* footer start */
+.footer{
+	text-align: center;
+}
+.footer p{
+	padding: 40px;
+	font-size: 14px;
+}
+.footer .fooImg figure img{
+	width: 130px;
+	height: 40px;
+}
+.footer .fooImg figure{
+	display: inline-block;
+	margin-left: 20px;
+}

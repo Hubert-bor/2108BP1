@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				width: 100%;
+				height: 50px;
+				background: pink;
+				display: flex;
+				justify-content: space-around;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+				line-height: 50px;
+			}
+			li{
+				list-style: none;
+				color: #256B9C;
+				text-align: center;
+				margin: 20px;
+				border-bottom: solid 1px #256B9C;
+				padding-bottom: 10px;
+				/* 鼠标放上去变成小手 */
+				cursor: pointer;   
+			}
+			.main{
+				width: 100%;
+				display: flex;
+				height: 400px;
+			}
+			.left{
+				width: 300px;
+				border: solid 1px purple;
+			}
+			.right{
+				width: 300px;
+				border: solid 1px orange;
+			}
+			.center{
+				flex: 1;
+				border: solid 1px black;
+			}
+			.footer{
+				width: 100%;
+				background:skyblue;
+				height: 50px;
+			}
+			.ul1{
+				display: none;
+			}
+			.ul2{
+				display: none;
+			}
+			.ul3{
+				display: none;
+			}
+			@media screen and (max-width:1000px){
+				.a1{
+					display: none;
+				}
+				.ul1{
+					display: block;
+				}
+			}
+			@media  screen and (max-width:800px) {
+				.a2{
+					display: none;
+				}
+				.ul2{
+					display: block;
+				}
+			}
+			@media  screen and (max-width:500px){
+				.main{
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			响应式布局:
+				当页面进行拉伸,缩放,页面会根据分辨率的不同,呈现出不同的样式
+			代码格式:
+			@media 类型 and(条件1) and (条件2){
+				css样式
+			}
+		</pre>
+		<div class="box">
+			<div class="nav">
+				<a href="">李楠</a>
+				<a href="">李萌</a>
+				<a href="">李启荣</a>
+				<a href="">杜英杰</a>
+				<a href="" class='a2'>曹拯?</a>
+				<a href="" class='a2'>杨毅</a>
+				<a href="" class='a2'>丁小毛</a>
+				<a href="" class='a2'>淡英俊</a>
+				<a href="" class='a1'>李静</a>
+				<a href="" class='a1'>吴凡</a>
+				<a href="" class='a1'>高玥</a>
+				<a href="" class='a1'>杨培</a>
+			</div>
+			
+			<div class="main">
+				<div class="left">left</div>
+				<div class="center">
+					<ul class="ul2">
+						<li>曹拯?</li>
+						<li>杨毅</li>
+						<li>丁小毛</li>
+						<li>淡英俊</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="ul1">
+						<li>李静</li>
+						<li>吴凡</li>
+						<li>高玥</li>
+						<li>杨培</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="footer">
+				
+			</div>
+		</div>
+	</body>
+</html>

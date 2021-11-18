@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 头部 */
+.header{
+	height: 80px;
+	background-color: #f3f3f9;
+	margin: 0px 150px;
+}
+.header img{
+	height: 80px;
+}
+/* 导航 */
+.navBox{
+	margin: 0px 150px;
+	color: white;
+	text-align: center;
+	background-color: #0000FF;
+}
+.navBox ul li{
+	padding: 10px 30px;
+	display: inline-block;
+}
+
+/* 大图 */
+.banner{
+	margin-top: 10px;
+}
+.banner img{
+	margin: 0px 150px;
+	width: 1236px;
+}
+
+/* 表格 */
+.table{
+	margin-top: 20px;
+}
+.table table{
+	margin: 0px 150px;
+	width: 1236px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid blue;
+}
+td{
+	border: 1px solid blue;
+	color: #125297;
+	padding: 10px;
+}
+/* 相关文章 */
+.xgBox{
+	width: 1236px;
+	margin: 0px 150px;
+}
+h1{
+	font-weight: 200;
+	padding: 20px 0;
+}
+.xgBox ul{
+	margin-left: 20px;
+}
+.xgBox ul li{
+	color: #134ba2;
+	padding: 5px 0;
+}
+
+/* 相关报价 */
+.xgbBox{
+	width: 1236px;
+	margin: 0px 150px;
+	margin-bottom: 50px;
+}
+.p1{
+	font-size: 20px;
+	color: #134ba2;
+}
+.p2 span{
+	color: red;
+}
+
+/* 底部 */
+.footer{
+	width: 1236px;
+	margin: 0px 150px;
+	text-align: center;
+}
+.footer p{
+	display: inline-block;
+	padding: 30px;
+}
+.footer img{
+	vertical-align: middle;
+}

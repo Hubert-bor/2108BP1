@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			pre{
+				font-size: 20px;
+			}
+			.d1{
+				width: 1200px;
+				height: 800px;
+				border: solid 1px;
+				margin: auto;
+				/* 转换成弹性盒子模型 */
+				display: flex;
+				flex-wrap: wrap-reverse;
+			}
+			.d1>div{
+				background: purple;
+				margin: 10px;
+				height: 200px;
+				width: 200px;
+				border: solid 1px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			flex-warp 设置弹性盒子的子元素如果超出父元素,那么会不会发生换行
+			nowarp  默认值,规定元素不换行
+			warp    规定元素在必要的时候,也就是超出父元素宽度时,进行换行.注: 是完全体进行换行,整个子元素进行换行
+			wrap-reverse  规定元素在必要的时候,换行,以相反的顺序排列
+		</pre>
+		<div class="d1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+		<!-- 	<div>8</div>
+			<div>9</div>
+			<div>10</div> -->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+			javascript运算符
+				常用的运算符
+					算术运算符 + - * / %(取模/取余)
+					字符串拼接 +
+					比较运算符 == === != >= <= >=  < >  两个等号是判断数值是否相等,三个等号不仅判断数值,还判断值的类性
+					逻辑运算符 && || !
+		
+		
+		</pre>
+		<script>
+			// 算术运算符
+				console.group('算术运算符')
+					var a = 2;
+					var b = 6;
+					console.log(a+b);  //加法
+					console.log(a-b);  //减法
+					console.log(a*b);  //乘法
+					console.log(a/b);  //除法
+					console.log(b%4);  //取模(取模)
+					// 小数转化为整数,只输出整数部分  parseInt()
+					console.log(parseInt(1.8));
+				console.groupEnd()	
+				
+			// 字符串拼接
+				console.group('字符串拼接')
+					var c = '1';
+					var d = '2';
+					console.log(c+d);
+				console.groupEnd()	
+			// 比较运算符	
+				console.group('比较运算符')
+					var g = 3;
+					var f = 3;
+					var h = (g===f);
+					console.log(h);
+				console.groupEnd()	
+				
+			// 逻辑运算符 
+				console.group('逻辑运算符')
+				var k = 1;
+				var l = 3;
+				var p = 5;
+				var j = l>k && l<p;
+				console.log(!j);
+				console.groupEnd()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪元素改变li前符号</title>
+		<style type="text/css">
+			/* 
+				能响应::marker的元素只能是一个list-items
+				可以对任意设置了display:list-items;的元素使用::marker伪元素
+			 */
+			.list1 li{
+				padding-left: 10px;
+				color: #0055FF;
+			}
+			.list1 li::marker{
+				content: '😜';
+			}
+			
+			.list2 li{
+				padding-left: 10px;
+				color: #000000;
+			}
+			.list2 li:hover{
+				color: #ff6000;
+			}
+			.list2 li::marker{
+				content: '😐';
+			}
+			.list2 li:hover::marker{
+				content: '😁';
+			}
+		</style>
+	</head>
+	
+	<body>
+		<ul class="list1">
+			<li>Cntagious</li>
+			<li>Stages</li>
+			<li>Pages</li>
+			<li>Courageous</li>
+			<li>Shaymus</li>
+			<li>Faceless</li>
+		</ul>
+		<ul class="list2">
+			<li>Cntagious</li>
+			<li>Stages</li>
+			<li>Pages</li>
+			<li>Courageous</li>
+			<li>Shaymus</li>
+			<li>Faceless</li>
+		</ul>
+	</body>
+</html>

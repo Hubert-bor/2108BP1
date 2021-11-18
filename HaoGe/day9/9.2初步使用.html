@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background: linear-gradient(to top right,pink,skyblue,plum);
+				/* 动画的名字 */
+				animation-name: waterStar;
+				/* 动画执行一次需要的的时间  */
+				animation-duration: 5s;
+				/* 动画执行速度,linear匀速执行 */
+				animation-timing-function: linear;
+				/* 延迟时间 */
+				animation-delay: 1s;
+				/* 动画播放次数 */
+				animation-iteration-count: 2;
+				/* 动画播放方向 */
+				animation-direction: normal;
+				/* 动画不播放时的样式 */
+				animation-fill-mode: forwards;
+			}
+			div:hover{
+				/* 播放状态 */
+				animation-play-state: paused;
+			}
+			@keyframes waterStar{
+				0%{transform: rotate(0);margin-left: 0;}
+				20%{transform: scale(0.5);}
+				40%{margin-top: 50px;}
+				60%{transform: skew(20deg);}
+				80%{border-radius: 0px;}
+				85%{margin-top:30px ;}
+				100%{transform: rotate(360deg);margin-top: 50px;margin-left: 200px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

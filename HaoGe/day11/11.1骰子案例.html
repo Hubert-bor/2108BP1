@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box {
+				background: #000000;
+				width: 1200px;
+				height: 500px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.box>div {
+				width: 100px;
+				height: 100px;
+				border-radius: 10px;
+				margin: 20px;
+				background: white;
+				padding: 10px;
+			}
+
+			.ball {
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				background: black;
+			}
+
+			/* 第一个骰子 */
+			.d1 {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.d1>div:nth-child(2) {
+				align-self: center;
+			}
+
+			.d1>div:nth-child(3) {
+				align-self: flex-end;
+			}
+
+			/* 第二个骰子 */
+			.d2 {
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+			}
+
+			/* 第三个骰子 */
+			.d3 {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.d3>div:first-child {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.d3>div:last-child {
+				display: flex;
+				justify-content: flex-end;
+			}
+
+			/* 第四个骰子 */
+			.d4 {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.d4>div:nth-child(2) {
+				align-self: center;
+			}
+
+			.d4>div:nth-child(3) {
+				align-self: flex-end;
+				visibility: hidden;
+			}
+			/* 第五个骰子 */
+			.d5{
+				display: flex;
+				justify-content: space-between;
+			}
+			.d5>div:last-child{
+				align-self: flex-end;
+			}
+			/* 第六个骰子 */
+			.d6{
+				display: flex;
+				align-items: center;
+			}
+			/* 第七个骰子 */
+			.d7>div:first-child{
+				display: flex;
+				justify-content: space-between;
+			}
+			.d7>div:nth-child(2){
+				display: flex;
+				justify-content: center;
+			}
+			.d7>div:last-child{
+				display: flex;
+				justify-content: space-between;
+			}
+			.d7{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			/* 第九个骰子 */
+			.d9{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			/* 第十个骰子 */
+			.d10{
+				display: flex;
+				justify-content: space-between;
+			}
+			/* 第十一个骰子 */
+			.d11{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			/* 第十二个骰子 */
+			.d12{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.d12>div{
+				display: flex;
+				justify-content: space-between;
+			}
+			/* 第十三个骰子 */
+			.d13{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.d13>div{
+				display: flex;
+				justify-content: space-between;
+			}
+			/* 第十四个骰子 */
+			.d14{
+				display: flex;
+				justify-content: center;
+			}
+			/* 第十五个骰子 */
+			.d15{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-end;
+			}
+			/* 第十六个骰子 */
+			.d16{
+				display: flex;
+				justify-content: flex-end;
+			}
+			/* 第十七个骰子 */
+			.d17{
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+				align-items: center;
+			}
+			/* 第十八个骰子 */
+			.d18>div{
+				display: flex;
+				justify-content: space-between;
+			}
+			.d18{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			/* 第十九个骰子 */
+			.d19{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+			}
+			/* 第二十个骰子 */
+			.d20{
+				display: flex;
+				justify-content: space-between;
+			}
+			.d20>div{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<!-- 第一个骰子 -->
+			<div class="d1">
+				<div class='ball'></div>
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>
+			<!-- 第二个骰子 -->
+			<div class="d2">
+				<div class='ball'></div>
+			</div>
+			<!-- 第三个骰子 -->
+			<div class="d3">
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class='ball'></div>
+				</div>
+			</div>
+			<!-- 第四个骰子 -->
+			<div class="d4">
+				<div class='ball'></div>
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>
+			<!-- 第五个骰子 -->
+			<div class="d5">
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>
+			<!-- 第六个骰子 -->
+			<div class="d6">
+				<div class='ball'></div>
+			</div>
+			<!-- 第7个骰子 -->
+			<div class="d7">
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class="ball"></div>
+				</div>
+				<div>
+					<div class="ball"></div>
+					<div class="ball"></div>
+				</div>
+			</div>
+			<!-- 第八个骰子 -->
+			<div class="d8">
+				<div class='ball'></div>
+			</div>
+			<!-- 第九个骰子 -->
+			<div class="d9">
+				<div class='ball'></div>
+			</div>
+			<!-- 第十个骰子 -->
+			<div class="d10">
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>
+			<!-- 第十一个骰子 -->
+			<div class="d11">
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>
+			<!-- 第十二个骰子 -->
+			<div class="d12">
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+			</div>
+			<!-- 第十三个骰子 -->
+			<div class="d13">
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+			</div>
+			<!-- 第十四个骰子 -->
+			<div class="d14">
+				<div class='ball'></div>
+			</div>
+			<!-- 第十五个骰子 -->
+			<div class="d15">
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>	
+			<!-- 第十六个骰子 -->
+			<div class="d16">
+				<div class='ball'></div>
+			</div>
+			<!-- 第十七个骰子 -->
+			<div class="d17">
+				<div class='ball'></div>
+				<div class='ball'></div>
+			</div>
+			<!-- 第十八个骰子 -->
+			<div class="d18">
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+			</div>
+			<!-- 第十九个骰子 -->
+			<div class="d19">
+				<div class='ball'></div>
+			</div>
+			<!-- 第二十个骰子 -->
+			<div class="d20">
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+				<div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+					<div class='ball'></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

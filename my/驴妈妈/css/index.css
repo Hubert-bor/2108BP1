@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 80%;
+	min-width: 1050px;
+	margin:auto;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 12px;
+	display: inline-block;
+}
+li{
+	list-style: none;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+.clear{
+	content: '';
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+.header{
+	background: #fafafa;
+}
+.header .content{
+	padding: 10px 0;
+}
+.header .content a{
+	padding: 0px 5px;
+}
+.header .content .left img{
+	vertical-align: middle;
+}
+.nav{
+	padding: 20px;
+}
+.nav .navRight img{
+	display: block;
+	margin: 0 auto;
+}
+.nav .navRight>div{
+	display: inline-block;
+	font-size: 12px;
+	color: #adadad;
+	margin: 0 0 0 10px;
+}
+.navText{
+	background: #dd3477;
+}
+.navText .contetn .navList li{
+	padding: 10px 5px;
+	position: relative;
+}
+.navText .contetn .navList li::after{
+	display: none;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-bottom-color: #ffffff;
+	position: absolute;
+	top: 27px;
+	left: 13px;
+}
+.navText .contetn .navList li:hover{
+	background: #a71c53;
+}
+.navText .contetn .navList li:hover::after{
+	display: block;
+}
+.navText .contetn .navList li a {
+	color: #fff;
+	
+}
+.navBottom{
+	background: #ffffff;
+	padding: 10px;
+	padding-left: 19%;
+}
+.navBottom a{
+	padding: 0 15px;
+}
+.navBottom a:hover{
+	color: #dd3477;
+}
+.bottom{
+	height: 600px;
+	background: url(../img/banner_bg.jpg) no-repeat;
+}
+.bottom .botCont .top>div{
+	height: 70px;
+}
+.bottom .botCont .top .topLeft{
+	width: 30%;
+	background: url(../img/dot.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.bottom .botCont .top .topRight{
+	width: 70%;
+	position: relative;
+}
+.bottom .botCont .top .topRight input{
+	width: 87%;
+	height: 37px;
+	margin-top: 15px;
+	outline: none;
+	padding-left: 70px;
+	border: 2px solid #dd3477;
+}
+.bottom .botCont .top .topRight::after{
+	content: '搜索';
+	display: inline-block;
+	width: 100px;
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	background: #f23288;
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	border: 2px solid #dd3477;
+}
+.bottom .botCont .top .topRight p{
+	width: 50px;
+	font-size: 12px;
+	position: absolute;
+	top: 26px;
+	left: 10px;
+	border-right: 1px solid gray;
+}
+.bottom .botCont .top .topRight p span img{
+	vertical-align: middle;
+}
+.bottom .botCont .botBottom .botLeft{
+	width: 30%;
+	background: #fff;
+}
+.bottom .botCont .botBottom .botLeft>div{
+	border-bottom: 1px solid #bebebe;
+	width: 93%;
+	padding: 10px;
+	position: relative;
+}
+.bottom .botCont .botBottom .botLeft>div:last-child{
+	border: 0;
+	padding-bottom: 0;
+}
+.bottom .botCont .botBottom .botLeft h5{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.bottom .botCont .botBottom .botLeft  p{
+	font-size: 12px;
+	color: gray;
+}
+.bottom .botCont .botBottom .botLeft  p span{
+	display: inline-block;
+	margin-right: 37px;
+}
+.bottom .botCont .botBottom .botLeft .yb{
+	position: absolute;
+	top: 46px;
+	right: 13px;
+}
+.bottom .botCont .botBottom .botRight{
+	background: url(../img/bjxmp-04yanqihu9000724.jpg) no-repeat;
+	width: 70%;
+}

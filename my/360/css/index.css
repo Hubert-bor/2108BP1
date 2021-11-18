@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 980px;
+	margin: auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+body{
+	background: #f0f0f0;
+}
+/* 清除浮动 */
+.clearFixed:after{
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	content: "";
+}
+
+/* header start */
+.header .headerCon{
+	background-color: #f0f0f0;
+	height: 80px;
+}
+.header .headerCon img:first-child{
+	padding: 25px 0px;
+}
+.header .headerCon .headerRight{
+	float: right;
+	margin-right: 120px;
+	margin-top: 20px;
+}
+.header .headerCon .headerRight input{
+	width: 250px;
+	height: 33px;
+	float: left;
+	margin-top: 3px;
+	border: 2px solid #37ad00;
+}
+.header .headerCon .headerRight img{
+	margin-left: -3px;
+}
+
+/* navBox start */
+.navBox{
+	background-color: #64b441;
+}
+.navBox .navCon .navUl li a{
+	display: inline-block;
+	color: white;
+	padding: 15px 18px;
+}
+.navBox .navCon .navUl li a:nth-child(3){
+	background-color: #217815;
+}
+
+/* content start */
+.content .conText{
+	width: 954px;
+	height: 470px;
+	margin-top: 10px;
+	padding-top: 13px;
+	padding-left: 13px;
+	padding-right: 13px;
+	background:#ffffff;
+}
+/* .content .conText >div{
+	width: 290px;
+	height: 270px;
+	float: left;
+	background-color: red;
+} */
+.style{
+	width: 290px;
+	height: 270px;
+	float: left;
+}
+.content .conText >div:nth-child(2){
+	width: 354px;
+	margin: 0px 10px;
+}
+.content .conText .conTextCen h3{
+	text-align: center;
+	margin-top: 10px;
+	color: #FF0000;
+}
+.content .conText .conTextCen .conTop p{
+	text-indent: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+	width: 324px;
+	margin-left: -2px;
+	text-indent: 43px;
+	text-align: center;
+}
+.content .conText .conTextCen .conBottom{
+	width: 317px;
+	height: 182px;
+	margin-left: 19px;
+	padding-top: 10px;
+	font-size: 12px;
+	border-top: 1px dotted #cccccc;
+}
+.content .conText .conTextCen .conBottom  ul li a span{
+	color: #c2a599;
+	margin-right: 5px;
+}
+.content .conText .conTextCen .conBottom a{
+	display: block;
+	padding: 5px 0;
+}
+.content .conText .conTextRight .conTop h3{
+	font-weight: 300;
+	font-family: "宋体";
+}
+.content .conText .conTextRight .conTop img{
+	margin-top: 12px;
+}
+.content .conText .conTextCen p{
+	margin-left: -12px;
+	margin-top: 300px;
+}
+.content .conText .conTextCen .conImg{
+	background-color: #aaffff;
+}
+.content .conText .conTextCen .conImg .conImgBox{
+	width: 115px;
+	height: 115px;
+	float: left;
+	text-align: center;
+	margin: 20px 10px;
+}
+.content .conText .conTextCen .conImg .conImgBox span{
+	font-size: 12px;
+}
+
+/* footer start */
+.footer{
+	background-color: #dcdcdc;
+	text-align: center;
+	margin-top: 35px;
+}
+.footer a{
+	display: inline-block;
+	font-size: 12px;
+	color: #004276;
+}
+.footer span{
+	font-size: 12px;
+}
+.footer *{
+	padding: 10px;
+}
+
+/* floatImg start */
+.floatImg img{
+	position: absolute;
+	top: 196px ;
+	left: 130px;
+}

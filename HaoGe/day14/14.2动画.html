@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 400px;
+				height: 250px;
+				display: flex;
+				overflow: hidden;
+			}
+			img{
+				width: 100%;
+				animation: lbw 24s linear infinite;
+			}
+			@keyframes lbw{
+				0%,8%{transform: translate(0);}
+				16%,24%{transform: translate(-400px);}
+				32%,40%{transform: translate(-800px);}
+				48%,56%{transform: translate(-1200px);}
+				64%,72%{transform: translate(-1600px);}
+				80%,88%{transform: translate(-2000px);}
+				100%{transform: translate(-2400px);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/a6fec42e882111ebb6edd017c2d2eca2.jpg" >
+			<img src="img/b791c1799c444ac7902e1d51414973b7.png" >
+			<img src="img/backiee-122819.jpg" >
+			<img src="img/c10576c613df4fee85f119280c3625e4.png" >
+			<img src="img/d4f0a9ce880411ebb6edd017c2d2eca2.png" >
+			<img src="img/qdjqyq.jpg" >
+			<!-- 插入第一张图,避免动画回滚 -->
+			<img src="img/a6fec42e882111ebb6edd017c2d2eca2.jpg" >
+		</div>
+	</body>
+</html>

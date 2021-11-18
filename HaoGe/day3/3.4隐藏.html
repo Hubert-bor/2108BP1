@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 1000px;
+				height: 800px;
+				border: solid 1px black;
+				background-color: skyblue;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+			}
+			.box1{
+				border: solid 1px green;
+				background: green;
+				display: none;  //第一种隐藏,用的最最最多
+			}
+			.box2{
+				border: solid 1px yellow;
+				background: yellow;
+				visibility: hidden;//虽然隐藏了,但是实际还是存在,可以说是隐藏但是占位 */ */
+			}
+			.box3{
+				border: solid 1px pink;
+				background: pink;
+				opacity: 0;//透明度,某种意义上讲,也可以用作隐藏,只是变透明,依然存在,还是要占位 */
+			}
+			.box4{
+				border: solid 1px black;
+				background: black;
+			}
+			
+			
+			/* 
+				用的很多
+				 display:none;   隐藏 
+				 display:block;  展示
+			 
+			 */
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+			<div class="box4"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+				.box1{
+					width: 600px;
+					height: 600px;
+					border: solid 1px black;
+					margin: 50px auto;
+					display: flex;
+					/* flex-direction: column; */
+					/* justify-content: space-between; */
+				}
+				.box1>div{
+					width: 150px;
+					height: 150px;
+					background: plum;
+					margin: 10px;
+					line-height: 150px;
+					text-align: center;
+					align-self: baseline;
+				}
+				.box2{
+					width: 50px;
+					height: 50px;
+					background: black !important;
+				}
+				.box1>div:nth-child(1){
+				}
+				.box1>div:nth-child(2){
+				}
+				.box1>div:nth-child(3){
+				}
+		</style>
+	</head>
+	<body>
+		<pre>
+			1.弹性盒子子元素
+				1)order  用整数值来定义子元素排列顺序,默认值为0,数值越小,越靠前,可以为负值,
+						 如果order值相同,则按照默认顺序排列
+				2)align-self 设置或检索弹性盒子子元素自身在侧轴方向上对齐方式.
+					auto 默认值,一般会继承父元素align-items的属性
+					center 元素位于容器中心,弹性盒子子元素在该行侧轴(纵轴)的中心,
+							(如果该行的尺寸小于弹性盒子元素的尺寸,则会向两个方向溢出相同大小)
+					flex-start 元素位于容器开头
+					flex-end   元素位于容器底部
+					baseline  基本于flex-start相同
+		</pre>
+		<div class="box1">
+			<div>1</div>
+			<div class="box2"></div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>

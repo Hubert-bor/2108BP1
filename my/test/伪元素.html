@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪元素</title>
+		<style type="text/css">
+			/* 只有当为root时，存在效果，别的单词不存在效果 */
+			:root{
+				--blue: blue;
+				--white: #fff;
+				--gray: #737373;
+				--skybule: #55ffff;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-100px,-100px);
+				background: var(--skybule);
+				transition: 2s;
+				/* 此处transition并不能设置单独的元素变换时间！所有元素变换时间都是统一的在transition内设置为统一的2s */
+			}
+			.box:hover{
+				transform: rotate(20deg);
+				background: var(--gray);
+				/* 前缀var不能缺少 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+	</body>
+</html>

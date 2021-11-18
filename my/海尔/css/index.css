@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 95%;
+	min-width: 1250px;
+	margin: auto;
+}
+.Hidden{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+li{
+	list-style: none;
+}
+.FlexBox:after{
+	content: "";
+	clear: both;
+	overflow: hidden;
+}
+.FlexBox{
+	display: flex;
+	justify-content: space-between;
+}
+/* header start */
+.header>img{
+	width: 90px;
+	height: 30px;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+.header .heaList li a{
+	display: inline-block;
+	padding: 18px 60px 18px 0px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.header .heaList :nth-child(1){
+	/* margin-left: -120px; */
+}
+.header .heaList2 li input{
+	padding: 10px 0px;
+	margin-top: 10px;
+	border: 0;
+	background: #fafafa;
+}
+.header .heaList2 li img{
+	width: 40px;
+	height: 38px;
+	margin-top: 10px;
+}
+/* .header .heaList2 li:first-child{
+	margin-right: 20px;
+} */
+.header .heaList2 li:nth-child(2) img{
+	margin-left: -42px;
+	border: 0px;
+}
+.header .heaList2 li:nth-child(3) img{
+	margin-left: 35px;
+}
+ /* banner start */
+.banner>img{
+	width: 100%;
+}
+.peopleTop{
+	text-align: center;
+	height: 500px;
+	background: #f6f7f9;
+}
+.peopleTop h1{
+	margin: 30px;
+}
+.peopleTop .peopleList{
+	border-bottom: 1px solid #e3e3e4;
+}
+.peopleTop .peopleList ul li a{
+	display: inline-block;
+	padding-bottom: 5px;
+	margin: 0px 80px;
+	font-weight: bold;
+}
+.peopleTop .peopleList ul li a:first-child{
+	color: #005aaa;
+	padding: 3px 2px;
+	border-bottom: 5px solid #005aaa;
+}
+.peopleTop .peoImgThree{
+	margin-top: 50px;
+	height: 600px;
+	text-align: left;
+}
+.peopleTop .peoImgThree .imgLeft{
+	width: 370px;
+	height: 570px;
+	margin-right: 45px;
+	display: inline-block;
+	position: relative;
+	box-shadow: 2px 2px 6px 1px #ebebed;
+	/* background: pink; */
+}
+.peopleTop .peoImgThree .imgLeft>img{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+.peopleTop .peoImgThree .imgLeft figure img{
+	width: 100%;
+	margin-top: 20px;
+}
+.peopleTop .peoImgThree .imgLeft figure figcaption{
+	text-align: center;
+}
+.peopleTop .peoImgThree .imgLeft figure :nth-child(2){
+	margin-top: 30px;
+	font-weight: bold;
+}
+.peopleTop .peoImgThree .imgLeft figure :nth-child(3){
+	font-size: 12px;
+	margin-top: 10px;
+}
+.peopleTop .peoImgThree .imgLeft figure :nth-child(4) button{
+	color: #0b59ad;
+	font-size: 14px;
+	margin-top: 25px;
+	border: 1px solid #0b59ad;
+	padding: 15px 50px;
+	border-radius: 32px;
+	background-color: white;
+}
+/* news start */
+.news{
+	/* border: 1px solid black; */
+	margin-top: 320px;
+	overflow: hidden;
+}
+.news>h1{
+	padding: 40px;
+	text-align: center;
+}
+.news .newsLeft{
+	width: 670px;
+	display: inline-block;
+	/* border-bottom: 1px solid #c4d0d7; */
+	position: relative;
+}
+.news .newsLeft figure>img{
+	width: 100%;
+}
+.news .newsLeft figure figcaption>h2{
+	padding: 40px 0px;
+}
+.news .newsLeft figure figcaption p{
+	font-size: 12px;
+	border-bottom: 2px solid #c4d0d7;
+	padding-bottom: 10px;
+}
+.news .newsLeft .one .line{
+	height: 2px;
+	width: 50px;
+	display: inline-block;
+	background: #0c5ca8;
+	position: absolute;
+	bottom: 1px;
+}
+.news .newsRight{
+	width: 40%;
+	height: 300px;
+	float: right;
+}
+.news .newsRight .one .line{
+	height: 5px;
+	width: 50px;
+	display: inline-block;
+	background: #0c5ca8;
+	margin-bottom: 20px;
+}
+.news .newsRight{
+	position: relative;
+}
+.news .newsRight .one p{
+	font-size: 14px;
+}
+.news .newsRight .one span{
+	float: right;
+	display: inline-block;
+	padding-top: 15px;
+	color: #00449b;
+}
+.news .newsRight .one h3{
+	padding: 20px 0px;
+}
+.news .newsRight :nth-of-type(2){
+	margin-top: 50px;
+	border-top: 2px solid #c4d0d7;
+}
+.news .newsRight :nth-of-type(2) .line{
+	height: 2px;
+	width: 50px;
+	display: inline-block;
+	background: #0c5ca8;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 182px;
+	left: 0px;
+}
+.news .newsRight :nth-of-type(3){
+	margin-top: 50px;
+	border-top: 2px solid #c4d0d7;
+}
+.news .newsRight :nth-of-type(3) .line{
+	height: 2px;
+	width: 50px;
+	display: inline-block;
+	background: #0c5ca8;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 338px;
+	left: 0px;
+}
+
+/* linkLogo start */
+.linkLogo{
+	text-align: center;
+}
+.linkLogo>h1{
+	padding: 70px;
+}
+.linkLogo .imgBox{
+	height: 200px;
+	width: 100%;
+}
+.linkLogo .imgBox .imgLogo{
+	width: 180px;
+	height: 190px;
+	background-color: yellowgreen;
+	
+}
+
+.tttt{
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	border: 90px solid transparent;
+	border-top: 50px solid #f8f8f8;
+	position: absolute;
+	bottom: -139px;
+	left: 0px;
+}
+.bbbb{
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	border: 90px solid transparent;
+	border-bottom: 50px solid #f8f8f8;
+	position: absolute;
+	top: -139px;
+	left: 0px;
+}
+.box{
+	margin-top: 50px;
+	width: 180px;
+	height: 100px;
+	background-color: #f8f8f8;
+	position: relative;
+}

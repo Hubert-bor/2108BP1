@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+.FlexBox{
+	display: flex;
+	justify-content: space-between;
+}
+.main{
+	width: 75%;
+	margin: auto;
+}
+/* header start */
+.header .heaTop{
+	background-color: black;
+	text-align: right;
+}
+.header .heaTop span{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 5px 15px;
+}
+.header .heaTop span img{
+	margin-right: 10px;
+}
+.header .heaTop span:last-child{
+	padding-right: 85px;
+}
+.header .heaCen>img{
+	height: 35px;
+	margin-left: 40px;
+}
+.header .heaCen {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px;
+}
+.header .heaCen .heaList li a{
+	display: inline-block;
+	padding: 0px 20px;
+}
+.header .heaCen .heaList li img{
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+.header .heaCen>ul{
+	font-size: 14px;
+	line-height: 35px;
+}
+.header .heaCen .heaListRight li span{
+	margin-right: 30px;
+}
+.header .heaBottom img{
+	width: 100%;
+}
+
+/* imgCon start */
+.imgTop{
+	text-align: center;
+}
+.imgTop h1{
+	padding: 50px 0 0 0;
+}
+
+.imgTop .line{
+	display: inline-block;
+	width: 30px;
+	height: 2px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	background-color: red;
+}
+.imgBottom{
+	/* border: 1px solid red; */
+	width: 62%;
+	margin: auto;
+}
+.imgBottom>div{
+	margin-top: 20px;
+}
+.imgBottom div:nth-of-type(3){
+	width: 100%;
+	box-sizing: border-box;
+}
+.imgBottom div:nth-of-type(3) img:nth-of-type(2){
+	margin: 0px 14px;
+}
+
+/* footer start */
+.footer{
+	margin-top: 70px;
+}
+.footer>img{
+	width: 100%;
+}
+.footer .fooText{
+	width: 96%;
+	border-top: 1px solid #ececec;
+	font-size: 14px;
+	margin-top: 40px;
+	position: relative;
+}
+.footer .fooText .fooList{
+	padding: 40px 0;
+}
+.footer .fooText .fooList:first-child li a{
+	padding: 0px 10px;
+}
+.footer .fooText .fooList:last-child li{
+	padding: 0px 10px;
+}
+.footer .fooText .fooList li:last-child img{
+	position: absolute;
+	right: -58px;
+	top: 42px;
+}
+.footer .fooEnd{
+	text-align: center;
+	background: #e6e6e6;
+}
+.footer .fooEnd span{
+	display: inline-block;
+	font-size: 14px;
+	padding: 10px 12px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				background: pink;
+			}
+			li{
+				list-style: none;
+				width: 200px;
+				height: 200px;
+				background: purple;
+				float: left;
+				margin-left: 20px;
+			}
+			ul:after{
+				/* 内容为空 */
+				content: '';
+				/* 高度为0 */
+				height: 0;
+				/* 更改为块级元素 */
+				display: block;
+				/* 溢出隐藏 */
+				overflow: hidden;
+				/* 清除两侧浮动 */
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			清除浮动
+				子元素浮动,会造成父级元素塌陷
+				1.给父元素一个高度
+				2.给父元素添加一个属性 overflow:hidden;
+				3.在同级浮动的子元素后面添加一个 clear:both;
+				4.给父元素添加一个伪类元素after
+		</pre>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

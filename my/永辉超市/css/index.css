@@ -1,0 +1,261 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #444444;
+	display: inline-block;
+	font-size: 14px;
+}
+img{
+	display: block;
+}
+span{
+	display: inline-block;
+}
+.textOver{
+	
+}
+.main{
+	width: 70%;
+	min-width: 1000px;
+	margin: auto;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+.f{
+	float: left;
+}
+.r{
+	float: right;
+}
+
+.head{
+	height: 90px;
+	line-height: 90px;
+}
+.head .headCon .conLeft img{
+	width: 200px;
+	margin-top: 23px;
+}
+.head .headCon .conRight li{
+	float: left;
+}
+.head .headCon .conRight .headList{
+	position: relative;
+}
+.head .headCon .conRight .headList li a{
+	padding: 0 15px;
+}
+.head .headCon .conRight .headList li:first-child a{
+	background: #e60012;
+	color: #fff;
+}
+.head .headCon .conRight .headList li:last-child a{
+	height: 90px;
+}
+.head .headCon .conRight .headList li a:hover{
+	background: #e60012;
+	color: #fff;
+}
+.head .headCon .conRight  .headList li:nth-of-type(8){
+	border-left: 1px solid #afafaf;
+	border-right: 1px solid #afafaf;
+	box-sizing: border-box;
+}
+.head .headCon .conRight  .headList li:nth-of-type(8) span{
+	width: 20px;
+	height: 14px;
+	margin-top: 38px;
+	background: url(../img/icoWxTop.png) no-repeat;
+	background-size: 100% 100%;
+}
+.head .headCon .conRight  .headList .headImg a img{
+	width: 20px;
+	height: 17px;
+	margin-top: 38px;
+}
+.bac{
+	/* color: #444444 !important;
+	background: #3effdf !important; */
+	width: 58px;
+	height: 90px;
+	background: #ffffff;
+	position: absolute;
+	top: 1px;
+	right: 660px;
+	display: none;
+}
+.erCode{
+	width: 90px;
+	height: 145px;
+	overflow: hidden;
+	position: absolute;
+	top: 91px;
+	right: 31px;
+	display: none;
+	animation: slowly 0.5s linear 1 forwards;
+}
+.erCode img{
+	width: 90px;
+	height: 90px;
+}
+.erCode>p{
+	height: 0;
+	font-size: 12px;
+	margin-top: -38px;
+	text-align: center;
+}
+.head .headCon .conRight .headList li:nth-of-type(8):hover>div{
+	display: block;
+}
+.erCode{
+	
+}
+@keyframes slowly{
+	0%{height: 30px;}
+	50%{height: 60px;}
+	100%{height: 145px;}
+}
+.banner{
+	height: 450px;
+	background: url(../img/banner.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+.banner img{
+	width: 100%;
+	margin-top: -10px;
+}
+.threeBox{
+	margin-top: 30px;
+}
+.threeBox .threeBox_con .left,.threeBox .threeBox_con .right{
+	width: 40%;
+}
+.threeBox .threeBox_con .center{
+	width: 40%;
+}
+.threeBox .threeBox_con .left{
+	border: 1px solid #a2a2a2;
+	overflow: hidden;
+	height: 130px;
+}
+.threeBox .threeBox_con .left>div>div{
+	animation: getUp 5s linear infinite;
+}
+.threeBox .threeBox_con .left .left_con{
+	width: 20%;
+	height: 100%;
+	background: #f8f8f8;
+	color: red;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.bigText{
+	font-size: 40px;
+	margin-top: 20px;
+}
+.smallText{
+	margin-bottom: 20px;
+}
+.threeBox .threeBox_con .left .left_con .line{
+	height: 2px;
+	width: 50%;
+	background: red;
+	margin: auto;
+}
+.threeBox .threeBox_con .left .right_con{
+	width: 70%;
+	padding: 10px;
+}
+.threeBox .threeBox_con .left .right_con h3{
+	font-size: 18px;
+}
+.text_bottom{
+	margin-top: 5px;
+	font-size: 13px;
+}
+.threeBox .threeBox_con .right{
+	width: 15%;
+}
+.threeBox .threeBox_con .center .news{
+	color: red;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.threeBox .threeBox_con .center .newsLine{
+	width: 100%;
+	height: 2px;
+	background: #dcdcdc;
+	margin-bottom: 15px;
+}
+.threeBox .threeBox_con .center .newsLine span{
+	width: 13%;
+	float: left;
+	height: 2px;
+	background: red;
+}
+.threeBox .threeBox_con .right>*{
+	margin-bottom: 5px;
+}
+.cenList{
+	font-size: 12px;
+}
+.cenList li{
+	margin: 10px 0;
+}
+.cenList li span{
+	float: right;
+	color: #dcdcdc;
+}
+.green{
+	color: #009e20;
+	font-size: 30px;
+	font-weight: bold;
+}
+.green span{
+	font-size: 12px;
+	margin-left: 5px;
+}
+.time{
+	color: #decdec;
+	font-size: 12px;
+}
+.botLogo{
+	margin-top: 30px;
+}
+.botLogo>div{
+	width: 10%;
+	border: 1px solid #a7a7a7;
+}
+.botLogo>div img{
+	width: 100%;
+}
+.footer{
+	background: #262626;
+	color: #efefef;
+	font-size: 12px;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+.footer .fooLeft ,.fooRight{
+	margin-top: 10px;
+}
+@keyframes getUp{
+	0%{transform: translateY(0%);}
+	50%{transform: translateY(-50%);}
+	100%{transform: translateY(-100%);}
+}

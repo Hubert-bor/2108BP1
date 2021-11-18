@@ -1,0 +1,141 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#app{
+	width: 1500px;
+	margin: auto;
+}
+
+/* 导航 */
+#d1{
+	width: 1300px;
+	height: 100px;
+	margin: auto;
+	/* background-color: red; */
+	display: table;/* 图片居中的css样式 */
+}
+#d1_1,#d1_2,#d1_3{
+	display: inline-block;
+	height: 100px;
+}
+#d1_1{
+	/* background-color: #000000; */
+	width: 250px;
+	display: table-cell;/* 图片居中的css样式 */
+	vertical-align: middle;/* 图片居中的css样式 */
+	/* text-align: center; *//* 标签img水平居中 */
+}
+#d1_2{
+	/* background-color: #707070; */
+	line-height: 100px;
+	width: 850px;
+}
+#d1_2>a{
+	display: inline-block;
+	height: 100px;
+	text-decoration: none;
+	text-align: center;
+	color: #000000;
+	width: 85px;
+}
+#d1_2>a:hover{
+	color: #ff6700;
+}
+#d1_3{
+	/* background-color: aqua; */
+	line-height: 100px;
+	width: 200px;
+	/* background: url(../img/12eb0965ab33dc8e05870911b90f3f13.png) no-repeat 0 center; */
+}
+#d1_3 input{
+	width: 195px;
+	height: 50px;
+}
+
+/* 大图 */
+#d2{
+	width: 1300px;
+	margin: auto;
+	/* margin-top: 20px; */
+}
+#d2 img{
+	width: 1300px;
+}
+
+/* 视频 */
+#d3{
+	width: 1300px;
+	height: 370px;
+	margin: auto;
+	background-color: #f5f5f5;
+}
+#d3_1{
+	padding: 20px;
+}
+.xiaoTu{
+	/* 300*290 */
+	display: inline-block;
+	width: 296px;
+	height: 290px;
+	text-align: center;
+	background-color: #ffffff;
+}
+.san{
+	margin-left: 33px;
+}
+.xiaoTu span{
+	display: inline-block;
+	/* background-color: #DCDCDC; */
+	padding: 30px;
+}
+
+/* 底部文字 */
+#d4{
+	width: 1300px;
+	height: 200px;
+	margin: auto;
+	/* background-color: red; */
+}
+#d4_1{
+	display: inline-block;
+	width: 900px;
+}
+.liuLieXiaoZi{
+	display: inline-block;
+	height: 200px;
+	line-height: 40px;
+	padding: 0px 35px;
+	/* background-color: royalblue; */
+}
+.liuLieXiaoZi>a{
+	text-decoration: none;
+	text-align: center;
+	font-size: 13px;
+	color: #7575a0;
+}
+.liuLieXiaoZi>a:hover{
+	color: #ff6700;
+}
+.liuLieXiaoZi>*{
+	display: block;
+}
+#d4_2{
+	/* 220*100 */
+	float: right;
+	width: 220px;
+	height: 100px;
+	margin: 52px;
+	text-align: center;
+	border-left: 1px solid gray;
+	/* background-color: #A1A1A1; */
+}
+#d4_2{
+	font-size: 12px;
+	line-height: 29px;
+}
+#d4_2 span{
+	color: red;
+	font-size: 20px;
+}

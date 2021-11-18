@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>弹性盒子子元素</title>
+	</head>
+	<style>
+		.box{
+			width: 600px;
+			height: 600px;
+			margin: auto;
+			border: 1px solid #000000;
+			display: flex;
+			justify-content: space-between;
+		}
+		.box>div{
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+			line-height: 150px;
+			text-align: center;
+			border-radius: 50%;
+			background: #00FFFF;
+		}
+		.box>div:nth-of-type(1){
+			
+		}
+		.box>div:nth-of-type(2){
+			align-self: center;
+		}
+		.box>div:nth-of-type(3){
+			align-self: flex-end;
+		}
+	</style>
+	<body>
+		<div class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>

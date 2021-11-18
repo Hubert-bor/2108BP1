@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.p1{
+				font-size: 30px;
+				animation: lol 10s steps(25) forwards;
+				width: 0ch;
+				/* 溢出隐藏 */
+				overflow: hidden;
+				/* 不换行 */
+				white-space: nowrap;
+				font-family: '仿宋';
+			}
+			@keyframes lol{
+				0%{width: 0ch;}
+				100%{width: 50ch;}
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			steps(25)    多少步操作
+			1ch 
+			ch规则
+			1ch = 1英文 = 1个数字
+			2ch = 1个中文汉字
+		</pre>
+		<p class="p1">英雄联盟手游今天终于公测了大家晚上又可以熬夜了真好</p>
+	</body>
+</html>

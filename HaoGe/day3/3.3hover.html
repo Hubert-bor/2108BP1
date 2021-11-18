@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 500px;
+				height: 500px;
+				margin: auto;
+				border: solid 1px mediumturquoise;
+			}
+			/* 当hover后面直接大括号,那么代表作用于本身,如果后面跟了标签名,那么作用于其他元素 */
+			.box:hover img{
+				display: block;
+			}
+			img{
+				width: 100%;
+				display: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/836wj1.jpg" >
+		</div>
+	</body>
+</html>

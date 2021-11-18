@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+			引用数据类型
+				有3个引用数据类型
+				1)数组 Array  就是用中括号[],包裹着,那么就是一个数组,数组内部,每一项之间用逗号(英文字符逗号)隔开,
+				2)对象 object (万物皆对象)就是用花括号/大括号{},
+					{
+						键名/属性名:值/键值(可以是任意类型的值),每一项用逗号隔开
+					}
+				3)function 函数
+					function 函数名(){
+						写代码内容
+					}
+		
+		</pre>
+		<button type="button" onclick="btnFn()">点击</button>
+		<script>
+			var a = [1,2,'3',undefined,null];
+			console.log(a);
+			var b ='[1,2,3,4,5]';
+			console.log(b);
+			console.log('我们真是小机灵鬼');
+			console.log('a');
+			var c = {
+				userPhone:17611657269,
+				userName:'芳心纵火案',
+				userAge:8
+			};
+			console.log(c);
+			
+			
+			function btnFn(){
+				alert('按钮生效')
+			}
+		</script>
+	</body>
+</html>

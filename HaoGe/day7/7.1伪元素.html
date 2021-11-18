@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.p1:hover{
+				color: blue;
+				font-size: 20px;
+			}
+			
+			.p2::before{
+				content: '是不是';
+			}
+			.p2::after{
+				content: '对啊对啊';
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			伪类元素:定义元素特殊的一个属性或者样式(一般主要值鼠标滑过hover)
+			伪元素:可以定义元素内容,进行添加补充.
+		</pre>
+		<p class="p1">天气冷了,大家平时要穿好衣服</p>
+		<p class="p2">国庆节后,大家状态都比较萎靡</p>
+	</body>
+</html>

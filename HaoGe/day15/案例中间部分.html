@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 100%;
+				height: 600px;
+				margin: 150px auto;
+				/* border: solid 1px red; */
+				box-sizing: border-box;
+				padding: 20px 0;
+			}
+			.concent{
+				background: #F6F8FB;
+				width: 90%;
+				height: 400px;
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 3% 5%;
+			}
+			.concent>div{
+				background: white;
+				height: 220px;
+				box-sizing: border-box;
+			}
+			.left{
+				width: 31%;
+			}
+			.center{
+				width: 34%;
+			}
+			.right{
+				width: 20%;
+			}
+			.p1{
+				background: #2468F2;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+				color: white;
+				font-size: 14px;
+			}
+			.p2{
+				font-size: 13px;
+				color: #4680F4;
+				font-weight: 500;
+				margin-bottom: 11px;
+			}
+			.left_con{
+				display: flex;
+				justify-content: space-between;
+				width: 90%;
+				margin: 10px auto;
+				text-align: center;
+			}
+			.p3{
+				border: solid 1px #E9EAEE;
+				font-size: 13px;
+				color: #848191;
+				margin-bottom: 10px;
+				width: 100%;
+				padding: 2px 0;
+			}
+			.left_con_l,.left_con_r{
+				width: 40%;
+			}
+			.xian{
+				/* #F5F6F9 */
+				border: solid 0.5px #F5F6F9;
+			    height: 110px;
+			    margin-top: 27px;
+			}
+			li{
+				list-style: none;
+				font-size: 13px;
+			}
+			.center_con{
+				display: flex;
+				width: 90%;
+				margin: auto;
+				justify-content: space-between;
+			}
+			.ul1 li:nth-child(odd){
+				color: #4680F4;
+				font-weight: 500;
+				margin-top: 10px;
+			}
+			.ul1 li:nth-child(even){
+				font-size: 12px;
+				color: #76788C;
+				margin-top: 5px;
+			}
+			.ul2 li{
+				color: #484A65;
+				font-size: 15px;
+				font-weight: 500;
+				font-family: '黑体';
+				text-align: center;
+				margin-top: 15px;
+			}
+			.dw{
+				position: fixed;
+				right: 5%;
+				top: 0;
+			}
+			.p4{
+				border: solid 1px #2468F2;
+				color: #2468F2;
+				background: white;
+				width: 30px;
+				text-align: center;
+				padding: 10px 5px;
+			}
+			.p5{
+				border: solid 1px #2468F2;
+				color: white;
+				background: #2468F2;
+				width: 30px;
+				text-align: center;
+				padding: 10px 5px;
+				margin-top: 10px;
+			}
+			.p5 img{
+				width: 30px;
+				height: 30px;
+			}
+			.dw{
+				background: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="concent">
+				<!-- 云计算基础 -->
+				<div class="left">
+					<p class="p1">云计算基础</p>
+					<div class="left_con">
+						<div class="left_con_l">
+							<p class="p2">IAAS</p>
+							<p class="p3">计算/存储/网络</p>
+							<p class="p3">虚拟化</p>
+							<p class="p3">容器引擎</p>
+							<p class="p3">资源调度</p>
+						</div>
+						<div class="xian"></div>
+						<div class="left_con_r">
+							<p class="p2">PAAS</p>
+							<p class="p3">分布式中间件</p>
+							<p class="p3">分布式数据库</p>
+							<p class="p3">高可用</p>
+							<p class="p3">运维管理</p>
+						</div>
+					</div>
+				</div>
+				<!-- 金融互联网核心 -->
+				<div class="center">
+					<p class="p1">金融互联网核心</p>
+					<div class="center_con">
+						<ul class="ul1">
+							<li>业务核心</li>
+							<li>存款,带块账户管理等业务</li>
+							<li>会计核心</li>
+							<li>包括会计核算和五级分类</li>
+							<li>客户管理</li>
+							<li>客户关系和账户信息</li>
+						</ul>
+						<div class="xian"></div>
+						<ul class="ul1">
+							<li>业务核心</li>
+							<li>存款,带块账户管理等业务</li>
+							<li>会计核心</li>
+							<li>包括会计核算和五级分类</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 渠道层 -->
+				<div class="right">
+					<p class="p1">渠道层</p>
+					<ul class="ul2">
+						<li>自主设备</li>
+						<li>App</li>
+						<li>呼叫中心</li>
+						<li>网银</li>
+						<li>......</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="dw">
+			<p class="p4">联系我们</p>
+			<p class="p5"><span><img src="../day10/img/2.jpg" ></span>有奖问答</p>
+		</div>
+	</body>
+</html>

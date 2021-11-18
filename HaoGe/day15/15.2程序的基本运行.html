@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+			程序的基本运行
+				1.弹出框
+					1)alert('需要弹出的内容'),不管将这行代码放在咱们script代码中的哪个一个位置,只要
+							代码不出错,那么绝对会运行.
+					2)prompt(msg,defaultText);
+						msg 输入框上方的文字提示
+						defaultText  就是咱们输入框内部的文字提示,类似于输入框的placeholder,但并不是
+					3)confirm('内容'); 是一个带有指定消息且有确定以及取消按钮的弹出框
+				2.输出到页面中
+					document.write('书写的内容');
+					可以直接书写内容,也可以嵌套标签来使用
+				3.输出到控制台当中
+					F12或者右击检查
+					console.log('内容');
+					无论在代码中什么地方，或者说任意位置，只要代码不出错，不出bug，那么百分百回去执行。
+					可以同时输出多项内容,每一项内容之间,用逗号(英文符号中的逗号)隔开,console.log('a,b,c');
+				4.js代码除特殊情况,一般代码都是从上往下执行.
+				5.代码注释
+					//  单行代码注释
+					/**
+					 内容
+					  **/   多行代码注释
+				6.js书写
+					行内式  <button type="button" onclick=""></button>
+					内嵌式  <script></script>
+					外部引入js文件   <script src=""></script>//引号内写入路径
+		</pre>
+		<script src="index.js"></script>
+		<script>
+			// alert("2108B班级的编程之路开始了!");
+			// var a = prompt('请输入你的名字!','丁小毛');
+			// console.log(a);
+			
+			// confirm('请问由老板叫李启荣是去吃饭了吗');
+			
+			// 书写到页面中
+				// document.write('欢迎来到积云教育!');
+				// document.write('<p style="color:skyblue;">欢迎来到积云教育!</p>');
+				
+			// 输出到控制台
+				//console.log('丁小毛','淡英俊','杨毅');
+				
+			
+		</script>
+	</body>
+</html>

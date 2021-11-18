@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+li{
+	list-style: none;
+}
+.main{
+	width: 75%;
+	min-width: 1000px;
+	margin: auto;
+}
+.FlexBox{
+	display: flex;
+	justify-content: space-between;
+}
+/* header start */
+.header{
+	margin-top: 30px;
+}
+.header .healeft>img{
+	width: 110px;
+	margin-top: 17px;
+	vertical-align: middle;
+}
+.header .heaCen .heaList li a{
+	display: inline-block;
+	padding: 20px 20px;
+}
+.header .heaCen .heaList li a:first-child{
+	color: #ff6767;
+}
+.header .heaRight input{
+	width: 167px;
+	height: 25px;
+	margin-top: 19px;
+	border: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #000000;
+}
+.header .heaRight>a{
+	display: inline-block;
+	background-color: #999999;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	width: 45px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: 12px;
+}
+
+/* banner start */
+.banner{
+	margin-top: 20px;
+}
+.banner .banImg>img{
+	width: 100%;
+	position: relative;
+}
+.banner .banMuen{
+	width: 220px;
+	height: 414px;
+	opacity: 0.9;
+	background-color: #a32925;
+	position: absolute;
+	top: 111px;
+	left: 189px;
+}
+.banner .banMuen .banList{
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.banner .banMuen .banList li {
+	height: 20px;
+	font-size: 18px;
+	margin-top: 50px;
+	color: white;
+}
+.banner .banMuen .banList li span:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	/* background-color: #000000; */
+}
+.banner .banMuen .banList li:nth-child(1) :first-child{
+	background-image: url(../img/icon.png);
+	background-size: 140px;
+	background-repeat: no-repeat;
+	background-position: 1px -1px;
+}
+.banner .banMuen .banList li:nth-child(2) :first-child{
+	background-image: url(../img/icon.png);
+	background-size: 140px;
+	background-repeat: no-repeat;
+	background-position: -20px -1px;
+}
+.banner .banMuen .banList li:nth-child(3) :first-child{
+	background-image: url(../img/icon.png);
+	background-size: 140px;
+	background-repeat: no-repeat;
+	background-position: -39px -1px;
+}
+.banner .banMuen .banList li:nth-child(4) :first-child{
+	background-image: url(../img/icon.png);
+	background-size: 140px;
+	background-repeat: no-repeat;
+	background-position: -60px -1px;
+}
+.banner .banMuen .banList li:nth-child(5) :first-child{
+	background-image: url(../img/icon.png);
+	background-size: 140px;
+	background-repeat: no-repeat;
+	background-position: -80px -1px;
+}
+.text{
+	margin-top: 20px;
+	background-color: red;
+}
+.text>div{
+	width: 33%;
+	background-color: #eeeeee;
+}
+.text .texCon{
+	padding-left: 50px;
+	padding-top: 20px;
+}
+.text .texCon h2{
+	font-weight: 400;
+}
+.text .texCon p:nth-child(2){
+	font-size: 12px;
+	margin-top: 20px;
+	color: #999999;
+}
+.text .texCon p:nth-child(3){
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+
+/* footer start */
+.footer>h3{
+	margin-top: 20px;
+	width: 75px;
+	border-bottom: 2px solid #ff6767;
+}
+.footer figure img{
+	width: 120px;
+	height: 120px;
+}
+.footer .footerImg{
+	border: 1px solid #e8e8e8;
+}
+.footer figure figcaption{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.footer .fooBootm {
+	text-align: center;
+	padding: 70px;
+	font-size: 12px;
+	color: #666666;
+}
+.footer .fooBootm img{
+	vertical-align: middle;
+}

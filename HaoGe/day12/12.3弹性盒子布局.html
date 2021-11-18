@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				display: flex;
+			}
+			.box div:first-child{
+				width: 200px;
+				height: 200px;
+				background: red;
+			}
+			.box div:last-child{
+				/* 弹性盒子独有,自适应 */
+				flex: 1; 
+			    height: 200px;
+				background: green;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>left</div>
+			<div>right</div>
+		</div>
+	</body>
+</html>

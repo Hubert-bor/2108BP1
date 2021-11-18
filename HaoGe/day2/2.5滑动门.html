@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				margin-left: 20px;
+			}
+			ul li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			li{
+				width: 200px;
+				height: 80px;
+				margin-top: 20px;
+				line-height: 80px;
+				text-align: center;
+				border-radius: 10px;
+			}
+			li div{
+				width: 500px;
+				height: 300px;
+				/* border: solid purple; */
+				margin-left: 250px;
+				margin-top: -50px;
+				border-radius: 10px;
+				color: white;
+			}
+			.week1{
+				/* 渐变色 linear-gradient() 括号里面写颜色,多个颜色用逗号隔开*/
+				background: red;
+			}
+			.week2{
+				background: orange;
+			}
+			.week3{
+				background: yellow;
+			}
+			.week4{
+				background: green;
+			}
+			.week5{
+				background: #29F2E5;
+			}
+			.week6{
+				background: blue;
+			}
+			.week7{
+				background: purple;
+			}
+			.week1_box{
+				background: purple;
+				display: none;
+			}
+			.week2_box{
+				display: none;
+				background: blue;
+			}
+			.week3_box{
+				display: none;
+				background: #29F2E5;
+			}
+			.week4_box{
+				display: none;
+				background: green;
+			}
+			
+			.week5_box{
+				display: none;
+				background: yellow;
+			}
+			.week6_box{
+				display: none;
+				background: orange;
+			}
+			.week7_box{
+				display: none;
+				background: red;
+			}
+			ul li a:hover{
+				font-size: 50px;
+			}
+			ul li:hover div{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="week1">
+				<a href="">周一</a>
+				<div class="week1_box">今天吃 宫保鸡丁</div>
+			</li>
+			<li class="week2">
+				<a href="">周二</a>
+				<div class="week2_box">今天吃 黄焖鸡</div>
+			</li>
+			<li class="week3">
+				<a href="">周三</a>
+				<div class="week3_box">今天吃 牛杂面</div>
+			</li>
+			<li class="week4">
+				<a href="">周四</a>
+				<div class="week4_box">今天吃 羊肉汤</div>
+			</li>
+			<li class="week5">
+				<a href="">周五</a>
+				<div class="week5_box">今天吃 羊蝎子</div>
+			</li>
+			<li class="week6">
+				<a href="">周六</a>
+				<div class="week6_box">今天吃 牛蝎子</div>
+			</li>
+			<li class="week7">
+				<a href="">周日</a>
+				<div class="week7_box">今天吃 大盘鸡</div>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			pre{
+				font-size: 20px;
+			}
+			.d1{
+				width: 1200px;
+				height: 800px;
+				border: solid 1px;
+				margin: auto;
+				/* 转换成弹性盒子模型 */
+				display: flex;
+			}
+			.d1>div{
+				background: purple;
+				margin: 10px;
+				height: 200px;
+				width: 200px;
+				border: solid 1px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			1.弹性盒子
+				css3特有的
+				是一种新的布局模式
+				是页面需要适配不同分辨率或者说是屏幕大小,设备类型时,确保元素能够正常按照恰当的顺序展示.
+			2.为什么要使用弹性盒子
+				1)方便快捷,方便了画页面
+				2)提供了一种更加有效的方式来对一个容器中的子元素来进行排列.
+				3)对齐,或者合理分配空白区域
+				
+			注意:在使用了弹性盒子以后,子元素的float,clear和vertical-align都会失效.
+			3.容器属性
+				1)flex-direction  定义弹性容器中子元素的排列方式
+				2)flex-warp 设置弹性盒子的子元素如果超出父元素,那么会不会发生换行
+				3)flex-flow  其实就是flex-direction 以及 flex-warp
+				4)align-items 设置子元素在纵轴排列对齐方式
+				5)justify-content 设置子元素在水平方向上的排列方式
+				
+				
+				
+				
+		</pre>
+		<div class="d1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>

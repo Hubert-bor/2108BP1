@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 1000px;
+	margin: auto;
+}
+a{
+	text-decoration: none;
+	color: block;
+}
+li{
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/* 清除浮动 */
+.clearFixed:after{
+	overflow: hidden;
+	height: 0px;
+	display: block;
+	clear: both;
+}
+
+/* header start */
+.header{
+	background: #148cc9;
+	line-height: 50px;
+	height: 50px;
+	font-size: 14px;
+}
+.header .headerLeft img{
+	float: left;
+	margin-right: 50px;
+}
+.header .headerLeft .ulListLeft li {
+	float: left;
+}
+.header .headerLeft .ulListLeft li a{
+	margin-right: 30px;
+	color: white;
+}
+.header .headerRight .ulListRight li{
+	float: right;
+}
+.header .headerRight .ulListRight li a{
+	margin-right: 15px;
+	color: white;
+}
+.header .headerRight .ulListRight li a:nth-child(2){
+	color: #29a0e2;
+}
+
+/* content start */
+.content .conTent{
+	height: 520px;
+	padding-top: 10px;
+	width: 880px;
+	padding: 10px 60px;
+	position: relative;
+	background: #f7f7f7;
+}
+.content .conTent>img{
+	position: absolute;
+	bottom: 60px;
+	right: 90px;
+}
+.content .conTent>span{
+	position: absolute;
+	bottom: 53px;
+	right: 47px;
+	color: #93c8f2;
+	font-size: 14px;
+	font-weight: bold;
+}
+.content .conTent .conBox{
+	width: 280px;
+	height: 450px;
+	background: #ffffff;
+	float: left;
+	position: relative;
+}
+.content .conTent .conBox:nth-child(2){
+	margin: 0px 17px;
+}
+.content .conTent .conBox .conBoxTop{
+	margin: 10px 30px 15px 30px;
+	text-align: center;
+}
+.content .conTent .conBox .conBoxTop img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;;
+}
+.content .conTent .conBox .conBoxTop p:first-child{
+	color: #8caeb7;
+	text-align: left;
+	font-size: 14px;
+}
+.content .conTent .conBox .conBoxTop p:last-child{
+	margin-top: 5px;
+	font-size: 14px;
+}
+.content .conTent .conBox .conBoxTop h3{
+	font-weight: 400;
+	font-family: "宋体";
+}
+.content .conTent .conBox .conBoxBottom{
+	width: 260px;
+	height: 140px;
+	margin-left: 10px;
+	padding-top: 10px;
+	border-top: 1px dotted #d1d1d1;
+}
+.content .conTent .conBox .conBoxBottom p{
+	font-size: 12px;
+	text-indent: 10px;
+}
+.content .conTent .conBox .conBoxBottom img{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* footer start */
+.footer .footerCon{
+	background: #ffffff;
+	padding-top: 35px;
+	height: 268px;
+	border-bottom: 1px dotted #637076;
+	overflow: hidden;
+}
+.footer .footerCon .footerUl{
+	overflow: hidden;
+	margin-right: 95px;
+}
+.footer .footerCon .footerUl dt{
+	font-size: 18px;
+}
+.footer .footerCon .footerUl dd{
+	font-size: 12px;
+	margin-top: 22px;
+}
+.footer .footerCon dl:last-child{
+	margin: 0;
+}
+.footer .footerCon .footerUl dd img{
+	width: 100px;
+	height: 100px;
+}
+.footer>p{
+	text-align: center;
+	margin: 20px 0 10px 0;
+	color: #7b8d8d;
+}

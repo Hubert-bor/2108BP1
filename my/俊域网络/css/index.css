@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+body{
+	background: var(--gray2);
+}
+.FlexBox{
+	display: flex;
+	justify-content: space-between;
+}
+:root{
+	--gold: #ff9900;
+	--white: #ffffff;
+	--gray: #8b8b8b;
+	--gray2: #f9f9f9;
+	--blue: #0043b3;
+}
+
+/* header start */
+.header .top{
+	background: var(--white);
+}
+.header .top .list ul li a{
+	display: inline-block;
+	line-height: 86px;
+	padding: 0px 15px;
+	font-size: 15px;
+}
+.header .top .list ul li a img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.header .top .list ul li a:first-child{
+	color: var(--gold);
+}
+.header .top .list ul li a:last-child{
+	padding-right: 40px;
+}
+.header .bottom img{
+	width: 100%;
+}
+.header .bottom{
+	padding: 0;
+}
+
+/* text start */
+.text{
+	padding: 70px 80px;
+}
+.text .textBoxTop{
+	padding: 25px;
+}
+.text .textBoxTop figure{
+	width: 335px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-right: 20px;
+	background: var(--white);
+}
+.text .textBoxTop img{
+	margin-top: 20px;
+}
+.text .textBoxTop figure h3{
+	font-weight: 500;
+	margin: 30px 0;
+}
+.text .textBoxTop figure figcaption{
+	font-size: 13px;
+	color: var(--gray);
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+
+/* bottom start */
+.bottom{
+	background: var(--white);
+	padding: 60px 0;
+}
+.bottom .top,.botBottom{
+	padding: 0px 100px;
+}
+.bottom .top h4{
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-weight: 500;
+}
+.bottom .botBottom label input{
+	width: 310px;
+	height: 60px;
+	padding-left: 10px;
+	border: 0;
+	outline: none;
+	/* outline: none; 取消input自带的点击黑框 */
+	background: var(--gray2);
+}
+.bottom .botBottom button{
+	width: 310px;
+	height: 60px;
+	padding-left: 10px;
+	border: 0;
+	color: var(--white);
+	background: var(--blue);
+}
+
+/* footer start */
+.footer{
+	padding: 45px 100px;
+	background: var(--blue);
+}
+.footer span{
+	display: inline-block;
+	font-size: 12px;
+	color: var(--white);
+}

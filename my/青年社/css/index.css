@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #24bda6;
+	font-size: 14px;
+	display: inline-block;
+}
+li{
+	list-style: none;
+}
+span{
+	display: inline-block;
+}
+.clear{
+	content: '';
+	display: block;
+	overflow: hidden;
+}
+.Flex{
+	display: flex;
+	justify-content: space-between;
+}
+.main{
+	width: 80%;
+	margin: 0 auto;
+}
+.header .header_nav{
+	margin-top: 30px;
+	padding: 0 10px;
+	border-bottom: 1px solid #24bda6;
+}
+.header{
+	border-bottom: 1px solid #24bda6;
+}
+.banner img{
+	width: 100%;
+}
+.header .header_nav .header_list li a{
+	padding: 10px 0;
+}
+.header .header_nav .header_list li:nth-of-type(1) a {
+	background: #24bda6;
+	color: #fff;
+	margin-left: -10px;
+	padding: 10px 50px;
+}
+.header .header_nav .header_list li:nth-of-type(2) a {
+	color: #ff7f00;
+}
+.someImg .top img{
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+.someImg .bottom .bottom_box{
+	position: relative;
+}
+.someImg .bottom .bottom_box img{
+	width: 225px;
+	height: 227px;
+}
+.someImg .bottom .bottom_box p:nth-of-type(1){
+	font-size: 12px;
+	color: #666666;
+}
+.someImg .bottom .bottom_box .span span:nth-of-type(1){
+	width: 225px;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+	background: black;
+	position: absolute;
+	bottom: 49px;
+	left: 0px;
+	padding: 10px 0;
+	opacity: 0.6;
+}
+.someImg .bottom .bottom_box .span span:nth-of-type(2){
+	width: 61px;
+	height: 24px;
+	line-height: 24px;
+	background: #ff7f00;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	border-bottom-right-radius: 10px;
+	position: absolute;
+	top: 0px;
+	left: -80px;
+}
+.someImg .bottom .bottom_box span:nth-of-type(1){
+	color: #aaaaaa;
+	font-size: 18px;
+	/* text-decoration: line-through; */
+}
+.someImg .bottom .bottom_box span:nth-of-type(2){
+	color: #ff7f00;
+	font-size: 22px;
+	display: inline-block;
+	margin-left: 80px;
+}
+.footer{
+	margin-top: 50px;
+	background: #f6f6f6;
+	padding-top: 20px;
+	border-top: 1px solid #dcdcdc;
+}
+.footer .footer_list .listBox .listBox_list{
+	border-right: 1px solid #dcdcdc;
+	width: 200px;
+	text-align: left;
+	margin-left: 45px;
+}
+.footer .footer_list .listBox .listBox_list dt a{
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.footer .footer_list .listBox .listBox_list dd a{
+	font-size: 12px;
+	color: #999999;
+}
+.footer .footer_logo{
+	margin-top: 80px;
+	background: #34c8b4;
+	padding: 10px 0;
+}
+
+.footer .footer_logo .cont .left p{
+	color: #fff;
+	font-size: 14px;
+	line-height: 23px;
+}
+.footer .footer_logo .cont .right .right_list li{
+	display: inline-block;
+	padding: 10px 70px;
+}
+.footer .footer_logo .cont .right .right_list li a{
+	color: #fff;
+	font-size: 14px;
+}
+.footer .footer_di{
+	background: #fff;
+	text-align: center;
+	font-size: 12px;
+	padding: 50px 0;
+}

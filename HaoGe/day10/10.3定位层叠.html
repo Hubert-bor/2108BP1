@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box1{
+				width: 800px;
+				height: 600px;
+				border: solid 1px;
+				position: relative;
+			}
+			.box2,.box3,.box4{
+				width: 200px;
+				height: 200px;
+				margin: 20px;
+				position: absolute;
+			}
+			.box2{
+				background: orange;
+				z-index: 1;
+			}
+			.box3{
+				background: red;
+				top: 50px;
+				left: 50px;
+				z-index: 2;
+			}
+			.box4{
+				background: purple;
+				top: 100px;
+				left: 100px;
+				z-index: 99999999999999;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			z-index
+				指一个元素的堆叠顺序,拥有更高堆叠顺序的元素处于堆叠顺序较低的元素前面.
+				只在定位中生效.结合定位使用
+		</pre>
+		<div class="box1">
+			<div class="box2">
+				1
+			</div>
+			<div class="box3">
+				2
+			</div>
+			<div class="box4">
+				3
+			</div>
+		</div>
+	</body>
+</html>

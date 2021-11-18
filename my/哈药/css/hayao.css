@@ -1,0 +1,242 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+#app{
+	width: 1519px;
+	margin: auto;
+}
+
+/* 头部 */
+#d1{
+	width: 980px;
+	height: 90px;
+	margin: auto;
+	display: table;
+	/* background-color: red; */
+}
+#d1_1{
+	width: 400px;
+	height: 90px;
+	display: table-cell;
+	vertical-align: middle;
+	/* background-color: #999999; */
+}
+#d1_2{
+	display: inline-block;
+	/* background-color: #7575A0; */
+	width: 300px;
+	height: 90px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+#d1_2>a{
+	color: #747474;
+	padding: 0px 2px;
+	display: inline-block;
+}
+#d1_2>a:hover{
+	color: red;
+}
+#d1_2>input{
+	width: 136px;
+}
+#zhong{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+/* 导航 */
+#d2{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding-left: 225px;
+	background-color: #d00110;
+}
+#d2 ul li{
+	float: left;
+	width: 125px;
+} 
+#d2>ul>li>a{
+	color: white;
+	padding: 0px 25px;
+}
+#d2>ul>li>a:hover{
+	color: aquamarine;
+}
+
+/* 大图 */
+#d3 img{
+	width: 100%;
+	/* height: 300px; */
+}
+
+/* 三列 */
+#d4{
+	width: 1519px;
+	margin-top: -4px;
+	text-align: center;	
+}
+.sanLieYi{
+	display: inline-block;
+	vertical-align: text-top;
+	text-align: left;
+	width: 325px;
+	height: 185px;
+	background-color: #f3f3f3;
+}
+.lingTouZi{
+	text-align: left;
+	padding: 15px 0px;
+	color: red;
+	font-weight: bold;
+}
+.lingTouZi span{
+	display: inline-block;
+	width: 50px;
+	font-size: 12px;
+	color: white;
+	float: right;
+	text-align: center;
+	margin-right: 5px;
+	border: 1px solid gray;
+	background-color: gray;
+}
+.sanLieYi ul{
+	float: left;
+	margin-left: 20px;
+}
+.sanLieYi>ul>li{
+	width: 302px;
+	font-size: 12px;
+	text-align: left;
+	border-bottom: 1px dotted gainsboro;
+	line-height: 30px;
+	color: #7D7D7D;
+}
+.sanLieYi>ul>li>span{
+	float: right;
+}
+
+/* 三列（图文） */
+#d5{
+	width: 1519px;
+	height: 240px;
+	text-align: center;
+	/* background-color: red; */
+}
+.sanLieEr{
+	display: inline-block;
+	vertical-align: text-top;
+	width: 325px;
+	height: 240px;
+	background-color: #FFFFFF;
+}
+.sanLieEr img{
+	width: 100%;
+}
+img.img{
+	display: inline-block;
+	width: 230px;
+	margin-left: 45px;
+}
+.sanLieEr.sanLieYi input{
+	width: 50px;
+}
+#input_1{
+	margin-left: 44px;
+	width: 100px;
+}
+
+/* 文字部分 */
+#d6{
+	margin-top: 20px;
+	width: 1519px;
+	height: 320px;
+	text-align: center;
+	background-color: #f3f3f3;
+}
+#d6 ul li{
+	float: left;
+	color: red;
+	margin-left: 20px;
+	padding: 0px 3px;
+}
+#d6_1{
+	display: inline-block;
+	width: 650px;
+	height: 300px;
+	vertical-align: text-top;
+	/* background-color: beige; */
+}
+#d6_2{
+	display: inline-block;
+	width: 330px;
+	height: 250px;
+	vertical-align: text-top;
+	/* background-color: #000000; */
+}
+.yiLie{
+	display: inline-block;
+	/* background-color: #0000FF; */
+	float: left;
+	width: 90px;
+}
+#d6_1 .yiLie li{
+	list-style: none;
+	float: none;
+	font-size: 12px;
+	line-height: 30px;
+	margin-top: 20px;
+	color: #000000;
+}
+#d6_1 img{
+	width: 100px;
+}
+#img{
+	width: 650px;
+	height: 80px;
+	float: left;
+	text-align: left;
+	/* background-color: #000000; */
+}
+#img img{
+	width: 165px;
+	margin-top: 20px;
+}
+#d6_2{
+	padding-top: 50px;
+}
+#d6_2 img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 5px;
+}
+#d6_2 span{
+	color: white;
+	padding: 21px;
+}
+#d6_2 input{
+	float: right;
+	margin-top: 30px;
+	height: 30px;
+}
+
+/* 版底 */
+#d7{
+	width: 1519px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px 0;
+	background-color: red;
+}
+#d7 p{
+	margin-top: 10px;
+}

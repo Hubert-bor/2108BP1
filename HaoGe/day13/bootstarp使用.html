@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<style>
+		.banner{
+			width: 30%;
+			
+		}
+		.banner_right{
+			width: 50%;
+		}
+		.lunbo{
+			width: 450px;
+			height: 400px;
+			margin-top: 100px;
+			display: flex;
+			overflow: hidden;
+		}
+		.lunbo img{
+			width: 470px;
+			height: 200px;
+			animation: lbw 10s linear infinite;
+		}
+		@keyframes lbw{
+			0%,25%{transform: translate(0);}
+			50%,75%{transform: translate(-470px);}
+			100%{transform:translate(-940px);}
+		}
+		</style>
+	</head>
+	<body style="padding: 20px 50px;">
+		<div style="display: flex;justify-content: space-between;">
+			<div class="banner">
+				<form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">姓名</label>
+				    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="userName">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">年龄</label>
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="age">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">性别</label>
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="sex">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">爱好</label>
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="hobby">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">学历</label>
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="education">
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div class="banner_right">
+				<p style="text-align: right;"><img src="img/3.png" ></p>
+				
+				<div class="lunbo">
+					<img src="img/2.jpg" >
+					<img src="img/4.jpg" >
+					<img src="img/2.jpg" >
+				</div>
+				<audio src="./img/2.mp3" controls='controls' loop="loop" autoplay='autoplay' style="opacity: 0;">
+				</audio>
+			</div>
+		</div>
+		<ul class="nav nav-tabs" style="margin-top: -100px;">
+		  <li role="presentation" class="active"><a href="#">学生名单</a></li>
+		  <li role="presentation"><a href="#">家庭住址</a></li>
+		  <li role="presentation"><a href="#">家长信息</a></li>
+		</ul>
+		<div style="width: 500px;">
+			<h4>2021年新生入学名单</h4>
+			<table class="table table-hover">
+				<tr>
+					<th>姓名</th>
+					<th>年龄</th>
+					<th>性别</th>
+					<th>爱好</th>
+					<th>学历</th>
+				</tr>
+				<tr>
+					<td>曹拯</td>
+					<td>20</td>
+					<td>男</td>
+					<td>女</td>
+					<td>小学生</td>
+				</tr>
+				<tr>
+					<td>丁小毛</td>
+					<td>15</td>
+					<td>男</td>
+					<td>男</td>
+					<td>小班</td>
+				</tr>
+			</table>
+		</div>
+	
+	</body>
+</html>

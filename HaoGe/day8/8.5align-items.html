@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			pre{
+				font-size: 20px;
+			}
+			.d1{
+				width: 1200px;
+				height: 800px;
+				border: solid 1px;
+				margin: auto;
+				/* 转换成弹性盒子模型 */
+				display: flex;
+				align-items: baseline;
+			}
+			.d1>div{
+				background: purple;
+				margin: 10px;
+				height: 200px;
+				width: 200px;
+				border: solid 1px;
+				color: white;
+			}
+			.d5{
+				height: 400px !important;
+			}
+			.d9{
+				height: 700px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			align-items 设置子元素在纵轴排列对齐方式
+				stretch 默认值 子元素默认展示方式
+				center  弹性盒子子元素竖直方向中心对齐
+				flex-start  容器开头对齐
+				flex-end    容器底部基线对齐
+				baseline 
+				
+				<img src="img/2.png" width="200px">
+		</pre>
+		<div class="d1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div class="d5">555555555555555555555555555555555555555555555555</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div class="d9">99999999999999999999999999999999999999999999999999</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>

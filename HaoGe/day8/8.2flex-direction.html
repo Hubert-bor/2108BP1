@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			pre{
+				font-size: 20px;
+			}
+			.d1{
+				width: 1200px;
+				height: 800px;
+				border: solid 1px;
+				margin: auto;
+				/* 转换成弹性盒子模型 */
+				display: flex;
+				
+				/* flex-direction  定义弹性容器中子元素的排列方式 */
+				
+				flex-direction: column-reverse;
+			}
+			.d1>div{
+				background: purple;
+				margin: 10px;
+				height: 200px;
+				width: 200px;
+				border: solid 1px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<pre>
+			flex-direction  定义弹性容器中子元素的排列方式
+			row     默认值,如果没有这个属性,就代表默认显示为row,元素水平显示.
+			row-reverse 与row相同,但是排列顺序与默认相反
+			column    竖直排列
+			column-reverse  反向竖直排列
+			无论宽或者高,一旦超过容器规定的宽高,那么自带的宽高属性将会失效
+			<img src="./img/1.png" style="width: 200px;">
+		</pre>
+		<div class="d1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>

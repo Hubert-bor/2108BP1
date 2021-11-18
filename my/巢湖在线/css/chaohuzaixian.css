@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body>div{
+	margin: 0 50px;
+}
+.header{
+	margin: 0 50px;
+}
+a{
+	text-decoration: none;
+}
+
+/* 导航 */
+.navBox a{
+	margin-top: 20px;
+	display: inline-block;
+	color: #000000;
+	border-right: 1px solid black;
+	padding: 0px 20px;
+}
+.navBox a:hover{
+	color: red;
+}
+
+/* banner */
+.banner img{
+	margin-top: 25px;
+	width: 100%;
+}
+
+/* 主体 */
+.sanGeBox{
+	width: 320px;
+	/* height: 500px; */
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+	/* border: 1px solid black; */
+}
+h4{
+	margin-left: 10px;
+	border-bottom: 1px solid gray;
+}
+h2{
+	width: 375px;
+	font-size: 22px;
+	color: #015093;
+	padding: 10px 10px;
+	border-top: 1px solid gray;
+}
+.sanGeBox p{
+	color: #134665;
+	padding: 10px 10px;
+}
+
+/* 主体 */
+.sanGeBox table{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	text-align: center;
+	border: 1px solid #ededed;
+	margin: 20px 10px 10px 10px;
+}
+.er{
+	width: 712px;
+}
+.red{
+	color: red;
+	font-weight: bold;
+}
+.sanGeBox table td{
+	padding: 5px 52px;
+}
+.sanGeBox ul li{
+	color: #03406f;
+	margin-left: 40px;
+	/* line-height: 35px; */
+	width: 360px;
+	padding: 6px 0px;
+}
+
+/* 小图片 */
+.xtBox{
+	clear: both;
+}
+h3{
+	margin-top: 30px;
+	padding-top: 30px;
+	margin-left: 30px;
+}
+.xtBox img{
+	margin-left: 20px;
+	width: 153px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+/* 底部 */
+.footer{
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.footer p{
+	margin-top: 20px;
+	font-size: 14px;
+}

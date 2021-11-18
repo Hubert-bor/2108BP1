@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+			1.动画 animation
+				transition 负责由初始到结束状态变化的简单动画
+				animation 负责更高程度的动画效果
+				
+				注意 IE9以下不支持,如果说想兼容,就得加前缀,比如说 -webkit-
+			2.动画属性
+				1)animation-name  动画名称
+					animation-name:自定义的名字
+				2)animation-duration 动画需要的时间.规定动画完成一个周期所花费的时间.以毫秒ms或者s为单位
+					animation-duration:1s/2s/1000ms
+				3)animation-timing-function 动画速度曲线
+					animation-timing-function:ease/linear/ease-in/ease-out/ease-in-out
+						ease  默认值,先慢再快,再慢
+						linear 匀速
+						ease-in 由慢到快
+						ease-out 由快到慢
+						ease-in-out 由慢到快再到慢
+				4)animation-delay 延迟时间(默认值是0)
+					animation-delay:1s/1000ms
+				5)animation-iteration-count 规定动画执行次数(默认为1次)
+					animation-iteration-count: 1 2 3 /infinite
+						infinite 重复执行
+				6)animation-direction 动画方向(默认值为正序播放normal)
+					animation-direction:normal/reverse
+						normal 正序
+						reverse 倒序
+				7)animation-play-state 播放状态
+					animation-play-state:running/paused
+						running 播放
+						paused  暂停
+				8)animation-fill-mode 规定动画不播放时的样式
+					animation-fill-mode:none/forwards/
+						none 默认
+						forwards 结束时啥样就是啥样
+						backwards 由运行延迟时间决定,位置决定
+			3.使用的规范
+				关键帧 @keyframes 
+				 
+				@keyframes 动画的名字{
+					form{}
+					to{}
+				}
+		</pre>
+	</body>
+</html>

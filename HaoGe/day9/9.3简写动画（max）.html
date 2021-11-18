@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>葫芦娃找爷爷</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				background: url(img/1.png) no-repeat;
+				width: 800px;
+				height: 400px;
+				background-size: 100% 100%;
+				position: relative;
+				margin: 100px auto;
+			}
+	
+			/* 	animation: 动画名称 动画时长 动画速度曲线 延迟时间 播放次数 是否反方向 动画结束状态; */
+			.img1{
+				width: 100px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				animation: threeBaby 5s linear 5s 1 forwards;
+			}
+			
+			@keyframes threeBaby{
+				0%{top: 0;left: 0;}
+				10%{top:230px;transform: rotate(360deg);}
+				20%{top:230px;left: 9%;transform: skewX(-10deg);}
+				40%{top:230px;left: 18%;transform: skewX(10deg);}
+				60%{top:230px;left: 27%;transform: skewX(-10deg);}
+				80%{top:230px;left: 36%;transform: skewX(10deg);}
+				100%{top:230px;left: 45%;transform: skewX(0);}
+			}
+			.box2{
+				width: 800px;
+				height: 400px;
+				background: #000000;
+				position: absolute;
+				z-index: 2;
+				opacity: 0.6;
+				animation: bg 3s linear 2s 1 forwards;
+			}
+			.box3{
+				position: absolute;
+				text-align: center;
+				left: 0;
+				right: 0;
+				top: 20%;
+				z-index: 3;
+				animation: zimu 3s linear 2s 1 forwards;
+			}
+			@keyframes zimu{
+				0%{opacity: 0.6;}
+				100%{opacity: 0;}
+			}
+			@keyframes bg{
+				0%{opacity: 0.6;}
+				33%{opacity: 0.6;}
+				66%{opacity: 0.6;}
+				100%{opacity: 0;}
+			}
+			.p1{
+				font-size: 30px;
+				color: red;
+				font-weight: 600;
+				letter-spacing: 15px;
+				font-family: 'fangsong';
+			}
+			.p2,.p3{
+				color: red;
+				margin-top: 30px;
+				font-size: 20px;
+			}
+			.p2 span{
+				margin-left: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2">
+			</div>
+			<div class="box3">
+				<p class="p1">葫芦娃救爷爷</p>
+				<p class="p2">制作人 <span>2108B全体成员</span></p>
+				<p class="p3">2021年10月07日</p>
+			</div>
+			
+			<img src="img/2.png" class="img1">
+		</div>
+	</body>
+</html>

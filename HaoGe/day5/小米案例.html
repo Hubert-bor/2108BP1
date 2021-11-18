@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+				color: #39334A;
+				font-size: 12px;
+				margin-right: 20px;
+			}
+			li{
+				list-style: none;
+			}
+			.header {
+				width: 75%;
+				min-width: 1000px;
+				margin: 20px auto;
+				/* border: solid 1px; */
+			}
+			.headerBox{
+			/* 	height: 80px;
+				line-height: 80px; */
+			}
+			.headerBox img{
+				width: 55px;
+				height: 55px;
+				vertical-align: middle;
+			}
+			.nav{
+				margin-left: 100px;
+			}
+			.searchIp{
+				border: solid 1px #E0E0E0;
+				width: 245px;
+				height: 45px;
+			}
+			button{
+				width: 45px;
+				height: 47px;
+				vertical-align: middle;
+				border: solid 1px #E0E0E0;
+				border-left: none;
+				margin-left: -5px;
+			}
+			.img1{
+				width: 20px !important;
+				height: 20px !important;
+			}
+			.banner{
+				height: 310px;
+				width: 100%;
+				background: url(img/1.jpg) no-repeat;
+				background-size: 100% 100%;
+				margin-top: 20px;
+			}
+			.banner img{
+				width: 100%;
+				opacity: 0.3;
+				height: 310px;
+			}
+			.con{
+				background: #F5F5F5;
+				width: 100%;
+				padding: 20px 0;
+			}
+			.p1{
+				font-size: 15px;
+				color:  #39334A;
+			}
+			.ul1{
+				width: 240px;
+			}
+			.ul1 li img{
+				width: 100%;
+			}
+			.ul1 li:nth-child(2){
+				line-height: 80px;
+				height: 80px;
+				text-align: center;
+				background: white;
+			}
+			figure{
+				width: 240px;
+			}
+			figure img{
+				width: 100%;
+			}
+			figcaption{
+				text-align: center;
+				height: 80px;
+				line-height: 80px;
+				background: white;
+			}
+			.showBox{
+				display: flex;
+				justify-content: space-between;
+				margin-top: 20px;
+			}
+			.box2{
+				/* display: inline-block; */
+				background: white;
+				height: 80px;
+			}
+			.box2 p{
+				text-align: center;
+			}
+			.box2 p:first-child{
+				padding-top: 20px;
+				margin-bottom: 5px;
+			}
+			.footer{
+				margin-top: 40px;
+				min-width: 1000px;
+				width: 75%;
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			.left{
+				width: 116%;
+			}
+			table{
+				width: 100%;
+			}
+			table th{
+				height: 60px;
+				font-weight: 400;
+				font-size: 15px;
+				text-align: left;
+			}
+			table td{
+				height: 30px;
+				font-size: 13px;
+				color: gray;
+			}
+			.telBox{
+				height: 100px;
+				width: 22%;
+				margin-top: 20px;
+				padding-left: 40px;
+				border-left: solid 1px #E0E0E0;
+			}
+			.tel_p1{
+				font-size: 18px;
+				color: #FF6700;
+				letter-spacing: 1px;
+				margin-bottom: 5px;
+			}
+			.tel_p2{
+				font-size: 12px;
+				text-align: center;
+				width: 130px;
+			}
+			.dwBox{
+				width: 60px;
+				border: solid 1px #F5F5F5;
+				border-right: none;
+				/* background: red; */
+				position: fixed;
+				right: 0;
+				top: 50%;
+			}
+			.ul2{
+				text-align: center;
+				background: white;
+			}
+			.ul2 li:nth-child(even){
+				border-bottom: solid 1px #F5F5F5;
+				font-size: 12px;
+			}
+			.ul2 li{
+				padding: 5px 0;
+			}
+			.ul2 li img{
+				width: 20px;
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body style="padding-bottom: 100px;">
+		<div class="header">
+			<!-- 头部 -->
+			<div class="headerBox">
+				<img src="./img/00.png" >
+				<span class="nav">
+					<a href="">小米手机</a>
+					<a href="">Redmi红米</a>
+					<a href="">电视</a>
+					<a href="">笔记本</a>
+					<a href="">家电</a>
+					<a href="">路由器</a>
+					<a href="">智能硬件</a>
+					<a href="">服务</a>
+					<a href="">社区</a>
+				</span>
+				<span style="">
+					<input type="text" class="searchIp">
+					<button type="button"><img class="img1" src="img/3.1.png" ></button>
+				</span>
+			</div>
+			<!-- 大图部分 -->
+			<div class="banner">
+				<img src="./img/2.jpg" >
+			</div>
+		</div>
+		<!-- 展示区域 -->
+		<div class="con">
+			<div style="min-width: 1000px;width: 75%;margin: 0 auto;">
+				<p class="p1">视频</p>
+				<div class="showBox">
+					<ul class="ul1">
+						<li><img src="./img/03.jpg" alt=""></li>
+						<li>小米MIX Alpha开箱视频</li>
+					</ul>
+					<figure>
+						<img src="./img/01.jpg" alt="">
+						 <figcaption>小米5G新品手机发布会</figcaption>
+					</figure>
+					<ul class="ul1">
+						<li><img src="./img/04.jpg" alt=""></li>
+						<li>Redmi Note 8 系列发布会</li>
+					</ul>
+					<ul class="ul1">
+						<li><img src="./img/02.jpg" alt=""></li>
+							<div class="box2">
+								<p>小米CC9</p>
+								<p style="color: #B8B8BE; font-size: 12px;">深蓝星球</p>
+							</div>
+					
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+		<!-- 底部信息 -->
+		<div class="footer">
+			<div class="left">
+				<table>
+					<tr>
+						<th>帮助中心</th>
+						<th>服务支持</th>
+						<th>线下门店</th>
+						<th>关于小米</th>
+						<th>关注我们</th>
+						<th>特色服务</th>
+					</tr>
+					<tr>
+						<td>帮助中心</td>
+						<td>服务支持</td>
+						<td>线下门店</td>
+						<td>关于小米</td>
+						<td>关注我们</td>
+						<td>特色服务</td>
+					</tr>
+					<tr>
+						<td>帮助中心</td>
+						<td>服务支持</td>
+						<td>线下门店</td>
+						<td>关于小米</td>
+						<td>关注我们</td>
+						<td>特色服务</td>
+					</tr>
+					<tr>
+						<td>帮助中心</td>
+						<td>服务支持</td>
+						<td>线下门店</td>
+						<td>关于小米</td>
+						<td>关注我们</td>
+						<td>特色服务</td>
+					</tr>
+				</table>
+			</div>
+			<div class="telBox">
+				<p class="tel_p1">400-100-5678</p>
+				<p class="tel_p2">周一至周日8:00-18:00</p>
+				<p class="tel_p2">(仅收市话费)</p>
+			</div>
+		</div>
+		
+		
+		<!-- 定位展示 -->
+		<div class="dwBox">
+			<ul class="ul2">
+				<li><img src="img/q1.png"></li>
+				<li>手机APP</li>
+				<li><img src="img/q2.png"></li>
+				<li>个人中心</li>
+				<li><img src="img/q3.png"></li>
+				<li>售后服务</li>
+			</ul>
+		</div>
+	
+	</body>
+</html>
